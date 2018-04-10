@@ -15,7 +15,7 @@
         <div class="alert alert-success mt-2">{{ $mensagem }}</div>
     @endif
     <form action="/encomenda/pesquisar" method="post" class="form-inline mt-2">
-        <input type="hidden" name="_token" value="{{{ csrf_token() }}}">
+        <input type="hidden" name="_token" value="{{{ csrf_token()}}}">
         <div class="form-group">
             <label for="nome_cliente">Nome: </label>
             <input type="text" id="nome_cliente" name="nome_cliente" class="form-control ml-2">

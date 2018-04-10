@@ -1,3 +1,4 @@
+<?php $titulo = '';?>
 <!doctype html>
 <html lang="pt-br">
 <head>
@@ -20,7 +21,7 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#"></a>
+                    <a class="dropdown-item" href="/encomenda/inserir">Inserir</a>
                     <a class="dropdown-item" href="#">Link 2</a>
                     <a class="dropdown-item" href="#">Link 3</a>
                 </div>
