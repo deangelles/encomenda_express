@@ -41,7 +41,7 @@ class EncomendaController extends Controller
         // Busca no banco o registro com o id recebido
         $encomendas = Encomendas::find($id);
         // Envia os dados deste registro a view produto.alterar
-        return view('encomenda.alterar')->with('encomenda', $encomendas);
+        return view('encomenda.alterar')->with('encomendas', $encomendas);
     }
     public function alterar()
     {
@@ -54,19 +54,19 @@ class EncomendaController extends Controller
         $e->save();
         $mensagem = "Encomenda alterado com sucesso!";
         $encomendas = Encomendas::all();
-        return view('encomenda.pesquisar')->with('mensagem', $mensagem)->with('encomanda', $encomendas);
+        return view('encomenda.pesquisar')->with('mensagem', $mensagem)->with('encomenda', $encomendas);
     }
     public function excluir($id)
     {
         // Criando um objeto com o id recebido pela rota
-        $encomendas = Encomendas::find($id);
+        $encomenda = Encomendas::find($id);
         // Excluindo este objeto
-        $encomendas->delete();
+        $encomenda->delete();
         // Criando uma mensagem para ser enviada a view produto.pesquisar
         $mensagem = "Encomenda excluído com sucesso!";
         // Capturando objetos para enviar a view produto.pesquisar
-        $encomendas = Encomendas::all();
+        $encomenda = Encomendas::all();
         // Retornando a view produto.pesquisar
-        return view('encomenda.pesquisar')->with('mensagem', $mensagem)->with('encomenda', $encomendas);
+        return view('encomenda.pesquisar')->with('mensagem', $mensagem)->with('encomenda', $encomenda);
     }
 }
