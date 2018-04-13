@@ -51,7 +51,7 @@
 </head>
 <body>
 <div class="container">
-    <ul class="nav nav-pills">
+    <ul class="nav nav-pills active bg-success text-white">
         <li class="nav-item">
             <a class="nav-link active bg-success text-white" href="http://127.0.0.1:8000/">Eucatur Express</a>
         </li>

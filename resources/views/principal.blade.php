@@ -56,7 +56,7 @@
 
     <div class="container" >
 
-        <ul class="nav nav-pills">
+        <ul class="nav nav-pills active bg-success text-white">
             <li class="nav-item">
                 <a class="nav-link active bg-success text-white" href="#">Eucatur Express</a>
             </li>
