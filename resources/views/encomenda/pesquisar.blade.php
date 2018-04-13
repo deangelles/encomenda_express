@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pesquisar Encomendas</title>
+    <title>Pesquisar Encomenda</title>
     <style>
         /*
         - Como Fazer Uma Imagem de Fundo Preencher Toda a Tela
@@ -57,6 +57,19 @@
         </li>
         <li class="nav-item">
             <a class="nav-link active bg-success text-white" href="/encomenda/inserir">Inserir Encomendas</a>
+        </li>
+        <li class="nav-item">
+
+                <a class="dropdown-item nav-link active bg-success text-white" href="{{ route('logout') }}"
+                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                    {{ __('Sair') }}
+                </a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+
         </li>
 
 

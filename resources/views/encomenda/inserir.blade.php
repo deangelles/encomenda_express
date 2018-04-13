@@ -58,6 +58,20 @@
             <a class="nav-link active bg-success text-white" href="/encomenda/pesquisar">Pesquisar Encomendas</a>
         </li>
 
+        <li class="nav-item">
+
+            <a class="dropdown-item nav-link active bg-success text-white" href="{{ route('logout') }}"
+               onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                {{ __('Sair') }}
+            </a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+
+        </li>
+
 
     </ul>
     <h1 class="mt-2">Inserir Encomenda</h1>

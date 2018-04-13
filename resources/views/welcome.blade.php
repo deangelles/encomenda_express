@@ -5,13 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Eucatur Express</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
         <style>
+
             html, body {
                 background-color: #fff;
                 color: #636b6f;
@@ -62,6 +63,20 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            body, html {
+                width: 100%;
+                height: 100%;
+                font-family: Arial, Tahoma, sans-serif;
+            }
+
+            body {
+                background: url(http://www.domidesign.com.br/wp-content/uploads/2015/12/verde-claro.jpg);
+
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
         </style>
     </head>
     <body>
@@ -72,14 +87,14 @@
                         <a href="{{ url('/home') }}">Home</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
+                        <a href="{{ route('register') }}">Registrar</a>
                     @endauth
                 </div>
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Eucatur Express
                 </div>
 
                 <div class="links">
